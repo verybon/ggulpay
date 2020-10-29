@@ -1,769 +1,319 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="./assets/favicon/favicon.ico" type="image/x-icon" />
-    
-    <!-- Map CSS -->
-    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css" />
-    
-    <!-- Libs CSS -->
-    <link rel="stylesheet" href="./assets/css/libs.bundle.css" />
-    
-    <!-- Theme CSS -->
-    <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
-    
-  
-    
-    <!-- Title -->
-    <title>Honeypay</title>
-  </head>
-  <body>
-
-    <!-- MODALS -->
-    <!-- Example -->
-    <div class="modal fade" id="modalExample" tabindex="-1" role="dialog" aria-labelledby="modalExampleTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-body">
-    
-            <!-- Close -->
-            <button type="button" class="modal-close close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">×</span>
-            </button>
-    
-            <!-- Image -->
-            <div class="text-center">
-              <img src="./assets/img/illustrations/illustration-1.png" alt="..." class="img-fluid mb-3" style="width: 200px;">
-            </div>
-    
-            <!-- Heading -->
-            <h2 class="font-weight-bold text-center mb-1" id="modalExampleTitle">
-              Schedule a demo with us
-            </h2>
-    
-            <!-- Text -->
-            <p class="font-size-lg text-center text-muted mb-6 mb-md-8">
-              We can help you solve company communication.
-            </p>
-    
-            <!-- Form -->
-            <form>
-              <div class="row">
-                <div class="col-12 col-md-6">
-    
-                  <!-- First name -->
-                  <div class="form-label-group">
-                    <input type="text" class="form-control form-control-flush" id="registrationFirstNameModal" placeholder="First name">
-                    <label for="registrationFirstNameModal">First name</label>
-                  </div>
-    
-                </div>
-                <div class="col-12 col-md-6">
-    
-                  <!-- Last name -->
-                  <div class="form-label-group">
-                    <input type="text" class="form-control form-control-flush" id="registrationLastNameModal" placeholder="Last name">
-                    <label for="registrationLastNameModal">Last name</label>
-                  </div>
-    
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-12 col-md-6">
-    
-                  <!-- Email -->
-                  <div class="form-label-group">
-                    <input type="email" class="form-control form-control-flush" id="registrationEmailModal" placeholder="Email">
-                    <label for="registrationEmailModal">Email</label>
-                  </div>
-    
-                </div>
-                <div class="col-12 col-md-6">
-    
-                  <!-- Password -->
-                  <div class="form-label-group">
-                    <input type="password" class="form-control form-control-flush" id="registrationPasswordModal" placeholder="Password">
-                    <label for="registrationPasswordModal">Password</label>
-                  </div>
-    
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-12">
-    
-                  <!-- Submit -->
-                  <button class="btn btn-block btn-primary mt-3 lift">
-                    Request a demo
-                  </button>
-    
-                </div>
-              </div>
-            </form>
-    
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <!-- Signup: Horizontal  -->
-    <div class="modal fade" id="modalSignupHorizontal" tabindex="-1" role="dialog" aria-labelledby="modalSignupHorizontalTitle" aria-hidden="true">
-      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="card card-row">
-            <div class="row gx-0">
-              <div class="col-12 col-md-6 bg-cover card-img-left" style="background-image: url(./assets/img/photos/photo-8.jpg);">
-    
-                <!-- Image (placeholder) -->
-                <img src="./assets/img/photos/photo-8.jpg" alt="..." class="img-fluid d-md-none invisible">
-    
-                <!-- Shape -->
-                <div class="shape shape-right shape-fluid-y svg-shim text-white d-none d-md-block">
-                  <svg viewBox="0 0 112 690" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M116 0H51v172C76 384 0 517 0 517v173h116V0z" fill="currentColor"/></svg>            </div>
-    
-              </div>
-              <div class="col-12 col-md-6">
-                <div class="card-body">
-    
-                  <!-- Close -->
-                  <button type="button" class="modal-close close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">×</span>
-                  </button>
-    
-                  <!-- Heading -->
-                  <h2 class="mb-0 font-weight-bold text-center" id="modalSignupHorizontalTitle">
-                    Sign Up
-                  </h2>
-    
-                  <!-- Text -->
-                  <p class="mb-6 text-center text-muted">
-                    Simplify your workflow in minutes.
-                  </p>
-    
-                  <!-- Form -->
-                  <form class="mb-6">
-    
-                    <!-- Email -->
-                    <div class="form-group">
-                      <label class="sr-only" for="modalSignupHorizontalEmail">
-                        Your email
-                      </label>
-                      <input type="email" class="form-control" id="modalSignupHorizontalEmail" placeholder="Your email">
-                    </div>
-    
-                    <!-- Password -->
-                    <div class="form-group mb-5">
-                      <label class="sr-only" for="modalSignupHorizontalPassword">
-                        Create a password
-                      </label>
-                      <input type="password" class="form-control" id="modalSignupHorizontalPassword" placeholder="Create a password">
-                    </div>
-    
-                    <!-- Submit -->
-                    <button class="btn btn-block btn-primary" type="submit">
-                      Sign up
-                    </button>
-    
-                  </form>
-    
-                  <!-- Text -->
-                  <p class="mb-0 font-size-sm text-center text-muted">
-                    Already have an account? <a href="./signin-illustration.html">Log in</a>.
-                  </p>
-    
-                </div>
-              </div>
-    
-            </div> <!-- / .row -->
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <!-- Signup: Vertical  -->
-    <div class="modal fade" id="modalSignupVertical" tabindex="-1" role="dialog" aria-labelledby="modalSignupVerticalTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="card">
-    
-            <!-- Close -->
-            <button type="button" class="modal-close close text-white" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">×</span>
-            </button>
-    
-            <!-- Image -->
-            <img src="./assets/img/photos/photo-7.jpg" alt="..." class="card-img-top">
-    
-            <!-- Shape -->
-            <div class="position-relative">
-              <div class=" shape-fluid-x svg-shim text-white">
-                <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor"/></svg>          </div>
-            </div>
-    
-            <!-- Body -->
-            <div class="card-body">
-    
-              <!-- Heading -->
-              <h2 class="mb-0 font-weight-bold text-center" id="modalSignupVerticalTitle">
-                Sign Up
-              </h2>
-    
-              <!-- Text -->
-              <p class="mb-6 text-center text-muted">
-                Simplify your workflow in minutes.
-              </p>
-    
-              <!-- Form -->
-              <form class="mb-6">
-    
-                <!-- Email -->
-                <div class="form-group">
-                  <label class="sr-only" for="modalSignupVerticalEmail">
-                    Your email
-                  </label>
-                  <input type="email" class="form-control" id="modalSignupVerticalEmail" placeholder="Your email">
-                </div>
-    
-                <!-- Password -->
-                <div class="form-group mb-5">
-                  <label class="sr-only" for="modalSignupVerticalPassword">
-                    Create a password
-                  </label>
-                  <input type="password" class="form-control" id="modalSignupVerticalPassword" placeholder="Create a password">
-                </div>
-    
-                <!-- Submit -->
-                <button class="btn btn-block btn-primary" type="submit">
-                  Sign up
-                </button>
-    
-              </form>
-    
-              <!-- Text -->
-              <p class="mb-0 font-size-sm text-center text-muted">
-                Already have an account? <a href="./signin-illustration.html">Log in</a>.
-              </p>
-    
-            </div>
-    
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <!-- Signin: Horizontal  -->
-    <div class="modal fade" id="modalSigninHorizontal" tabindex="-1" role="dialog" aria-labelledby="modalSigninHorizontalTitle" aria-hidden="true">
-      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="card card-row">
-            <div class="row gx-0">
-              <div class="col-12 col-md-6 bg-cover card-img-left" style="background-image: url(./assets/img/photos/photo-1.jpg);">
-    
-                <!-- Image (placeholder) -->
-                <img src="./assets/img/photos/photo-1.jpg" alt="..." class="img-fluid d-md-none invisible">
-    
-                <!-- Shape -->
-                <div class="shape shape-right shape-fluid-y svg-shim text-white d-none d-md-block">
-                  <svg viewBox="0 0 112 690" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M116 0H51v172C76 384 0 517 0 517v173h116V0z" fill="currentColor"/></svg>            </div>
-    
-              </div>
-              <div class="col-12 col-md-6">
-                <div class="card-body">
-    
-                  <!-- Close -->
-                  <button type="button" class="modal-close close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">×</span>
-                  </button>
-    
-                  <!-- Heading -->
-                  <h2 class="mb-0 font-weight-bold text-center" id="modalSigninHorizontalTitle">
-                    Sign In
-                  </h2>
-    
-                  <!-- Text -->
-                  <p class="mb-6 text-center text-muted">
-                    Simplify your workflow in minutes.
-                  </p>
-    
-                  <!-- Form -->
-                  <form class="mb-6">
-    
-                    <!-- Email -->
-                    <div class="form-group">
-                      <label class="sr-only" for="modalSigninHorizontalEmail">
-                        Your email
-                      </label>
-                      <input type="email" class="form-control" id="modalSigninHorizontalEmail" placeholder="Your email">
-                    </div>
-    
-                    <!-- Password -->
-                    <div class="form-group mb-5">
-                      <label class="sr-only" for="modalSigninHorizontalPassword">
-                        Enter your password
-                      </label>
-                      <input type="password" class="form-control" id="modalSigninHorizontalPassword" placeholder="Enter your password">
-                    </div>
-    
-                    <!-- Submit -->
-                    <button class="btn btn-block btn-primary" type="submit">
-                      Sign in
-                    </button>
-    
-                  </form>
-    
-                  <!-- Text -->
-                  <p class="mb-0 font-size-sm text-center text-muted">
-                    Don't have an account yet? <a href="./signin-illustration.html">Sign up</a>.
-                  </p>
-    
-                </div>
-              </div>
-    
-            </div> <!-- / .row -->
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <!-- Signin: Vertical  -->
-    <div class="modal fade" id="modalSigninVertical" tabindex="-1" role="dialog" aria-labelledby="modalSigninVerticalTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="card">
-    
-            <!-- Close -->
-            <button type="button" class="modal-close close text-white" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">×</span>
-            </button>
-    
-            <!-- Image -->
-            <img src="./assets/img/photos/photo-21.jpg" alt="..." class="card-img-top">
-    
-            <!-- Shape -->
-            <div class="position-relative">
-              <div class=" shape-fluid-x svg-shim text-white">
-                <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor"/></svg>          </div>
-            </div>
-    
-            <!-- Body -->
-            <div class="card-body">
-    
-              <!-- Heading -->
-              <h2 class="mb-0 font-weight-bold text-center" id="modalSigninVerticalTitle">
-                Sign In
-              </h2>
-    
-              <!-- Text -->
-              <p class="mb-6 text-center text-muted">
-                Simplify your workflow in minutes.
-              </p>
-    
-              <!-- Form -->
-              <form class="mb-6">
-    
-                <!-- Email -->
-                <div class="form-group">
-                  <label class="sr-only" for="modalSigninVerticalEmail">
-                    Your email
-                  </label>
-                  <input type="email" class="form-control" id="modalSigninVerticalEmail" placeholder="Your email">
-                </div>
-    
-                <!-- Password -->
-                <div class="form-group mb-5">
-                  <label class="sr-only" for="modalSigninVerticalPassword">
-                    Enter your password
-                  </label>
-                  <input type="password" class="form-control" id="modalSigninVerticalPassword" placeholder="Enter your password">
-                </div>
-    
-                <!-- Submit -->
-                <button class="btn btn-block btn-primary" type="submit">
-                  Sign in
-                </button>
-    
-              </form>
-    
-              <!-- Text -->
-              <p class="mb-0 font-size-sm text-center text-muted">
-                Don't have an account yet? <a href="./signin-illustration.html">Sign up</a>.
-              </p>
-    
-            </div>
-    
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <!-- Payment -->
-   
-
-	<div class="view">
-		<div class="bgbg">
-
-		<!-- NAVBAR -->
-		<nav class="navbar navbar-expand-lg navbar-light bs-yellow">
-		  <div class="container">
-		
-			<!-- Brand -->
-			<a class="navbar-brand" href="./index.html">
-			  <img src="./assets/img/logo.png" class="navbar-brand-img" alt="...">
-			</a>
-		
-			<!-- Toggler -->
-	<span class="badge rounded-pill bg-success-soft">
-		  <span class="h6 text-uppercase">4 openings</span>
-		</span>
-		
-			<!-- Collapse -->
-			<div class="collapse navbar-collapse" id="navbarCollapse">
-		
-			  <!-- Toggler -->
-			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-				<i class="fe fe-x"></i>
-			  </button>
-		
-			  <!-- Navigation -->
-			  <ul class="navbar-nav ml-auto">
-				<li class="nav-item dropdown">
-				  <a class="nav-link dropdown-toggle" id="navbarLandings"  href="#" aria-haspopup="true" aria-expanded="false">
-				   서비스신청
-				  </a>
-				
-				</li>
-				<li class="nav-item dropdown">
-				  <a class="nav-link dropdown-toggle" id="navbarPages" href="#" aria-haspopup="true" aria-expanded="false">
-					이벤트
-				  </a>
-			 
-				</li>
-				<li class="nav-item dropdown">
-				  <a class="nav-link dropdown-toggle" id="navbarAccount"  href="#" aria-haspopup="true" aria-expanded="false">
-					자주묻는질문
-				  </a>
-				 
-				</li>
-				<li class="nav-item dropdown">
-				  <a class="nav-link dropdown-toggle" id="navbarDocumentation"  href="#" aria-haspopup="true" aria-expanded="false">
-				   공지사항
-				  </a>
-				
-				</li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="navbarDocumentation"  href="#" aria-haspopup="true" aria-expanded="false">
-              고객센터
-              </a>
-            
-            </li>
-			  </ul>
-		
-			  <!-- Button -->
-	
-		
-			</div>
-		
-		  </div>
-		</nav>
-
-		<!-- WELCOME -->
-		<section class="pt-md-7 pb-13">
-		  <div class="container">
-			<div class="row align-items-center">
-			  <div class="col-12 col-md-5 col-lg-6 order-md-2">
-
-				<!-- Image -->
-				<img src="assets/img/illustrations/main_01.png" class=" img-fluid mw-md-150 mw-lg-130 mb-6 mb-md-0 aos-init aos-animate " alt="..." data-aos="fade-up" data-aos-delay="100">
-
-			  </div>
-			  <div class="col-12 col-md-7 col-lg-6 order-md-1" data-aos="fade-up">
-
-				<!-- Text -->
-				<p class="lead text-center text-md-left text-muted mb-6 mb-lg-8">꿀처럼 달달한 혜택이
- 쏟아집니다.</p>
-
-
-				<!-- Heading -->
-
-				<h1 class="text-center text-md-left"><span class="display-4">
-모든 월세</span><span class="display-5">(feat. 관리비, 보증금, 계약금)</span><br/>
-<span class="display-4 text-primary">신용카드 결제서비스</span></h1>
-            
-			   
-			  </div>
-			</div> <!-- / .row -->
-		  </div> <!-- / .container -->
-		</section>
-
-		<!-- BRANDS -->
- 
-		<!-- FEATURES -->
-		<section class="pt-8 pb-8 py-md-11 bg-white">
-		  <div class="container">
-			<div class="row">
-			  <div class="col-12 col-md-12" data-aos="fade-up" style="text-align:center;">
-				<!-- Text -->
-
-				<p class="font-size-lg text-muted mb-7 mb-md-9">
-계약서, 납부증만 있으면 OK!!<br/>
-연체/현금 부담없이 꿀페이하세요.<br/>
-꿀페이 자체포인트는 물론 <br/></p>
-				<h3 class="display-4">
-카드사 무이자 할부&포인트 적립으로 <span data-typed='{"strings": ["2배", "2배"]}'></span>혜택
-</h3>
-			  </div>
-		  
-		  </div> <!-- / .container -->
-		</section>
-
-		<!-- ABOUT -->
-		<section class="pt-8 py-md-7 pb-8 bg-gradient-light">
-		  <div class="container">
-	 
-			<div class="row align-items-center ">
-			  <div class="col-12 col-md-12 col-lg-6 text-center text-md-left " >
-				<!-- Heading -->
-				<h1>
-				  01<br>
-				  <span class="text-primary">신용카드 결제서비스</span>.
-				</h1>
-				<!-- Text -->
-				<p class="font-size-lg text-muted mb-6">
-				  꿀페이는 월세/관리비/보증금<br/>
-              신용카드 결제 서비스입니다.
-				</p>
-				<!-- List -->         
-			  </div>
-			  <div class="col-12 col-md-11 col-lg-6">
-
-				<div class="w-md-150 w-lg-130 position-relative  text-center">
-				  <!-- Image -->
-				  <div class="img-skewed img-skewed-left">
-					<!-- Image -->
-					<img src="assets/img/illustrations/img_01.png" data-aos="fade-up" data-aos-delay="100" alt="..."> 
-				  </div>
-				</div>
-			  </div>
-			</div> <!-- / .row -->
-		  </div> <!-- / .container -->
-      
-		</section>
-
-		<!-- TESTIMONIALS -->
-
-		<section class="pt-8 py-md-7 pb-8 bg-white">
-	    <div class="container">
-	  
-	     	<div class="row align-items-center ">
-	  	      <div class="col-12 col-md-12 col-lg-6 text-center text-md-left " >
-					<!-- Heading -->
-						<h1>
-						02<br>
-						<span class="text-primary">꿀페이는 집주인의 <br/>
-						동의가 필요없습니다.</span>
-					</h1>					
-			      <!-- Text -->
-						<p class="font-size-lg text-muted mb-6">
-						집주인이 서비스에 가입할 필요도 없고<br/>
-						고객님(세입자)이 단독으로 결제 가능합니다.</p>
-						<!-- List -->
-					</div>
-					<div class="col-12 col-md-11 col-lg-6">
-
-						<div class="w-md-150 w-lg-130 position-relative text-center ">
-
-						<div class="img-skewed img-skewed-left">
-								<!-- Image -->
-								<img src="assets/img/illustrations/img_02.png" class=" img-fluid mw-md-130 mw-lg-110 mb-6 mb-md-0 aos-init aos-animate " alt="..."> 
-							  </div>
-						</div>
-					</div>
-				</div>
-				<!-- / .row -->
-			</div>
-		</section>
-			<!-- / .container -->
-   
-	<!-- ABOUT -->
-			<section class="pt-8 py-md-7 pb-8 bg-gradient-light">
-			  <div class="container">
-	
-				<div class="row align-items-center ">
-				  <div class="col-12 col-md-12 col-lg-6 text-center text-md-left " >
-					<!-- Heading -->
-					<h1>
-					  03<br>
-					  <span class="text-primary">꿀페이는 타 업체 대비 
- <br/> <strong>혜택이 두배!!</strong></span>.
-			</h1>
-					<!-- Text -->
-					<p class="font-size-lg text-muted mb-6">
-					 
-				 오브콜스~ of course~ <br/>
-카드사 무이자&포인트 적립은 당연<br/>
-자체 등급별 포인트 적립으로 1원부터 사용가능합니다.
-					</p>
-					<!-- List -->         
-				  </div>
-				  <div class="col-12 col-md-11 col-lg-6">
-	
-					<div class="w-md-150 w-lg-130 position-relative  text-center">
-					  <!-- Image -->
-					  <div class="img-skewed img-skewed-left">
-						<!-- Image -->
-						<img src="assets/img/illustrations/img_03.png"  alt="..."> 
-					  </div>
-					</div>
-				  </div>
-				</div> <!-- / .row -->
-			  </div> <!-- / .container -->
-	
-			</section>
-			
-		<!-- TESTIMONIALS -->
-			
-				<section class="pt-8 py-md-7 pb-8 bg-white">
+	<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta property="og:title" content="꿀페이" />
+		<meta property="og:url" content="" />
+		<meta property="og:image" content="" />
+		<meta property="og:description" content="모든 월세 신용카드 결제서비스 꿀페이" />
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="./assets/favicon/favicon.ico" type="image/x-icon" />
+		<!-- Map CSS -->
+		<link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css" />
+		<!-- Libs CSS -->
+		<link rel="stylesheet" href="./assets/css/libs.bundle.css" />
+		<!-- Theme CSS -->
+		<link rel="stylesheet" href="./assets/css/theme.bundle.css" />
+		<link rel="stylesheet" href="./assets/css/honeypay.css" />
+		<!-- Title -->
+		<title>꿀페이</title>
+	</head>
+	<body data-page="main">
+		<div class="view">
+			<!-- NAVBAR -->
+			<nav class="navbar navbar-expand-lg navbar-light bs-yellow">
 				<div class="container">
-			  
-				 	<div class="row align-items-center ">
-			  		  <div class="col-12 col-md-12 col-lg-6 text-center text-md-left " >
+					<!-- Brand -->
+					<a class="navbar-brand" href="./index.html">
+						<img src="./assets/img/logo.png" class="navbar-brand-img" alt="꿀페이" />
+					</a>
+					<!-- Collapse -->
+					<div class="collapse navbar-collapse" id="navbarCollapse">
+						<!-- Toggler -->
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+							<i class="fe fe-x"></i>
+						</button>
+						<!-- Navigation -->
+						<ul class="navbar-nav ml-auto">
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" id="navbarLandings" href="#" aria-haspopup="true" aria-expanded="false">
+								서비스신청
+							</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" id="navbarPages" href="#" aria-haspopup="true" aria-expanded="false">
+								이벤트
+							</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" id="navbarAccount" href="#" aria-haspopup="true" aria-expanded="false">
+								자주묻는질문
+							</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" id="navbarDocumentation" href="#" aria-haspopup="true" aria-expanded="false">
+								공지사항
+							</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" id="navbarDocumentation" href="#" aria-haspopup="true" aria-expanded="false">
+								고객센터
+							</a>
+						</li>
+						</ul>
+						<!-- Button -->
+					</div>
+				</div>
+			</nav>
+			<!-- WELCOME -->
+			<section data-sect="main1" class="pt-md-7 pb-13">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-12 col-md-5 col-lg-6 order-md-2">
+							<!-- Image -->
+							<img src="assets/img/illustrations/main_01.png" class=" img-fluid mw-md-150 mw-lg-130 mb-6 mb-md-0 aos-init aos-animate " alt="..." data-aos="fade-up" data-aos-delay="100">
+						</div>
+						<div class="col-12 col-md-7 col-lg-6 order-md-1" data-aos="fade-up">
+							<!-- Text -->
+							<p class="lead text-center text-md-left text-muted mb-6 mb-lg-8 hnp-txt">
+								<span>꿀처럼 달달한 혜택이</span><span>꿀페이에서 쏟아집니다.</span>
+							</p>
 							<!-- Heading -->
-								<h1>
-								04<br>
-								<span class="text-primary">꿀페이는 안전합니다. 
-								</span>
-							</h1>					
-						  <!-- Text -->
-								<p class="font-size-lg text-muted mb-6">
-								비밀번호(SHA-512)는 물론 모든 개인정보를 <br/>
-								암호화하여 고객님의 개인정보를 소중히 지킵니다
-								</p>
-								<!-- List -->
-							</div>
-							<div class="col-12 col-md-11 col-lg-6">
-			
-								<div class="w-md-150 w-lg-130 position-relative text-center ">
-			
+							<h1 class="text-center text-md-left hnp-title">
+								<span class="display-5">모든 월세</span>
+								<span class="display-5">(feat. 관리비, 보증금, 계약금)</span>
+								<span class="display-3 text-primary font-weight-bold hnp-title-mainCopy">신용카드 결제서비스</span>
+							</h1>
+						</div>
+					</div> <!-- / .row -->
+				</div> <!-- / .container -->
+			</section>
+			<!-- BRANDS -->
+
+			<!-- FEATURES -->
+			<section class="pt-8 pb-8 py-md-11 bg-white">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-md-12" data-aos="fade-up" style="text-align:center;">
+						<!-- Text -->
+						<p class="font-size-lg text-muted mb-7 mb-md-9">
+							계약서, 납부증만 있으면 OK!!<br/>
+							연체/현금 부담없이 꿀페이하세요.<br/>
+							꿀페이 자체포인트는 물론 <br/>
+						</p>
+						<h3 class="display-4">
+							카드사 무이자 할부&포인트 적립으로 <span data-typed='{"strings": ["2배", "2배"]}'></span>혜택
+						</h3>
+					</div>
+				</div> <!-- / .container -->
+			</section>
+
+			<!-- ABOUT -->
+			<section class="pt-8 py-md-7 pb-8 bg-gradient-light">
+				<div class="container">
+					<div class="row align-items-center ">
+						<div class="col-12 col-md-12 col-lg-6 text-center text-md-left " >
+							<!-- Heading -->
+							<h1>
+								01<br>
+								<span class="text-primary">신용카드 결제서비스</span>.
+							</h1>
+							<!-- Text -->
+							<p class="font-size-lg text-muted mb-6">
+								꿀페이는 월세/관리비/보증금<br/>
+								신용카드 결제 서비스입니다.
+							</p>
+							<!-- List -->
+						</div>
+						<div class="col-12 col-md-11 col-lg-6">
+							<div class="w-md-150 w-lg-130 position-relative  text-center">
+								<!-- Image -->
 								<div class="img-skewed img-skewed-left">
-										<!-- Image -->
-										<img src="assets/img/illustrations/img_04.png" class=" img-fluid mw-md-130 mw-lg-110 mb-6 mb-md-0 aos-init aos-animate " alt="..."> 
-									  </div>
+									<!-- Image -->
+									<img src="assets/img/illustrations/img_01.png" data-aos="fade-up" data-aos-delay="100" alt="...">
 								</div>
 							</div>
 						</div>
-						<!-- / .row -->
-					</div>
-				</section>
-					<!-- / .container -->
-
-<!-- ABOUT -->
-			<section class="pt-8 py-md-7 pb-8 bg-gradient-light">
-			  <div class="container">
-
-				<div class="row align-items-center ">
-				  <div class="col-12 col-md-12 col-lg-6 text-center text-md-left " >
-					<!-- Heading -->
-					<h1>
-					  05<br>
-					  <span class="text-primary">꿀페이는 서비스 이용료를 <br/>
- <strong>5% </strong>부터 착하게 제공합니다.</span>
-			</h1>
-					<!-- Text -->
-					<p class="font-size-lg text-muted mb-6">
-
-				다양한 프로모션 진행 시 더 착한 서비스 혜택을 누려보세요.
-					</p>
-					<!-- List -->         
-				  </div>
-				  <div class="col-12 col-md-11 col-lg-6">
-
-					<div class="w-md-150 w-lg-130 position-relative  text-center">
-					  <!-- Image -->
-					  <div class="img-skewed img-skewed-left">
-						<!-- Image -->
-						<img src="assets/img/illustrations/img_05.png"  alt="..."> 
-					  </div>
-					</div>
-				  </div>
-				</div> <!-- / .row -->
-			  </div> <!-- / .container -->
-
+					</div> <!-- / .row -->
+				</div> <!-- / .container -->
 			</section>
 
+			<!-- TESTIMONIALS -->
+			<section class="pt-8 py-md-7 pb-8 bg-white">
+				<div class="container">
+					<div class="row align-items-center ">
+						<div class="col-12 col-md-12 col-lg-6 text-center text-md-left " >
+							<!-- Heading -->
+							<h1>
+								02<br>
+								<span class="text-primary">꿀페이는 집주인의 <br/>
+								동의가 필요없습니다.</span>
+							</h1>
+							<!-- Text -->
+							<p class="font-size-lg text-muted mb-6">
+								집주인이 서비스에 가입할 필요도 없고<br/>
+								고객님(세입자)이 단독으로 결제 가능합니다.
+							</p>
+							<!-- List -->
+						</div>
+						<div class="col-12 col-md-11 col-lg-6">
+							<div class="w-md-150 w-lg-130 position-relative text-center ">
+								<div class="img-skewed img-skewed-left">
+									<!-- Image -->
+									<img src="assets/img/illustrations/img_02.png" class=" img-fluid mw-md-130 mw-lg-110 mb-6 mb-md-0 aos-init aos-animate " alt="...">
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- / .row -->
+				</div>
+			</section>
+			<!-- / .container -->
 
+			<!-- ABOUT -->
+			<section class="pt-8 py-md-7 pb-8 bg-gradient-light">
+				<div class="container">
+					<div class="row align-items-center ">
+						<div class="col-12 col-md-12 col-lg-6 text-center text-md-left " >
+							<!-- Heading -->
+							<h1>
+								03<br>
+								<span class="text-primary">꿀페이는 타 업체 대비<br/> <strong>혜택이 두배!!</strong></span>.
+							</h1>
+							<!-- Text -->
+							<p class="font-size-lg text-muted mb-6">
+								오브콜스~ of course~ <br/>
+								카드사 무이자&포인트 적립은 당연<br/>
+								자체 등급별 포인트 적립으로 1원부터 사용가능합니다.
+							</p>
+						<!-- List -->
+						</div>
+						<div class="col-12 col-md-11 col-lg-6">
+							<div class="w-md-150 w-lg-130 position-relative  text-center">
+								<!-- Image -->
+								<div class="img-skewed img-skewed-left">
+								<!-- Image -->
+									<img src="assets/img/illustrations/img_03.png"  alt="...">
+								</div>
+							</div>
+						</div>
+					</div> <!-- / .row -->
+				</div> <!-- / .container -->
+			</section>
+			<!-- TESTIMONIALS -->
 
-	
-		<!-- CTA -->
-		<section class="py-8 py-md-11 bg-dark">
-		  <div class="container">
-			<div class="row justify-content-center">
-			  <div class="col-12 col-md-10 col-lg-8 text-center">
+			<section class="pt-8 py-md-7 pb-8 bg-white">
+				<div class="container">
+					<div class="row align-items-center ">
+						<div class="col-12 col-md-12 col-lg-6 text-center text-md-left " >
+							<!-- Heading -->
+							<h1>
+								04<br>
+								<span class="text-primary">꿀페이는 안전합니다.
+								</span>
+							</h1>
+							<!-- Text -->
+							<p class="font-size-lg text-muted mb-6">
+								비밀번호(SHA-512)는 물론 모든 개인정보를 <br/>
+								암호화하여 고객님의 개인정보를 소중히 지킵니다
+							</p>
+							<!-- List -->
+						</div>
+						<div class="col-12 col-md-11 col-lg-6">
+							<div class="w-md-150 w-lg-130 position-relative text-center ">
+								<div class="img-skewed img-skewed-left">
+									<!-- Image -->
+									<img src="assets/img/illustrations/img_04.png" class=" img-fluid mw-md-130 mw-lg-110 mb-6 mb-md-0 aos-init aos-animate " alt="...">
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- / .row -->
+				</div>
+			</section>
+			<!-- / .container -->
 
-				<!-- Badge -->
-				<span class="badge bg-gray-700-soft mb-4">
-				  <span class="h6 font-weight-bold text-uppercase">Get started</span>
-				</span>
+			<!-- ABOUT -->
+			<section class="pt-8 py-md-7 pb-8 bg-gradient-light">
+				<div class="container">
+					<div class="row align-items-center ">
+						<div class="col-12 col-md-12 col-lg-6 text-center text-md-left " >
+							<!-- Heading -->
+							<h1>
+								05<br>
+								<span class="text-primary">꿀페이는 서비스 이용료를 <br/>
+								<strong>5% </strong>부터 착하게 제공합니다.</span>
+							</h1>
+							<!-- Text -->
+							<p class="font-size-lg text-muted mb-6">
+								다양한 프로모션 진행 시 더 착한 서비스 혜택을 누려보세요.
+							</p>
+							<!-- List -->
+						</div>
+						<div class="col-12 col-md-11 col-lg-6">
+							<div class="w-md-150 w-lg-130 position-relative  text-center">
+								<!-- Image -->
+								<div class="img-skewed img-skewed-left">
+								<!-- Image -->
+									<img src="assets/img/illustrations/img_05.png"  alt="...">
+								</div>
+							</div>
+						</div>
+					</div> <!-- / .row -->
+				</div> <!-- / .container -->
+			</section>
 
-				<!-- Heading -->
-				<h1 class="display-4 text-white">
-				  Get Landkit and save your time.
-				</h1>
-
-				<!-- Text -->
-				<p class="font-size-lg text-muted mb-6 mb-md-8">
-				  Stop wasting time trying to do it the "right way" and build a site from scratch. Landkit is faster, easier, and you still have complete control.
-				</p>
-
-				<!-- Button -->
-				<a href="https://themes.getbootstrap.com/product/landkit/" target="_blank" class="btn btn-success lift">
-				  Buy it now <i class="fe fe-arrow-right"></i>
-				</a>
-
-			  </div>
-			</div> <!-- / .row -->
-		  </div> <!-- / .container -->
-		</section>
-
-	</div>
-	</div>
-
-
-
+			<!-- CTA -->
+			<section class="py-8 py-md-11 bg-dark">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-12 col-md-10 col-lg-8 text-center">
+							<!-- Badge -->
+							<span class="badge bg-gray-700-soft mb-4">
+								<span class="h6 font-weight-bold text-uppercase">Get started</span>
+							</span>
+							<!-- Heading -->
+							<h1 class="display-4 text-white">
+								Get Landkit and save your time.
+							</h1>
+							<!-- Text -->
+							<p class="font-size-lg text-muted mb-6 mb-md-8">
+								Stop wasting time trying to do it the "right way" and build a site from scratch. Landkit is faster, easier, and you still have complete control.
+							</p>
+							<!-- Button -->
+							<a href="https://themes.getbootstrap.com/product/landkit/" target="_blank" class="btn btn-success lift">
+								Buy it now <i class="fe fe-arrow-right"></i>
+							</a>
+						</div>
+					</div> <!-- / .row -->
+				</div> <!-- / .container -->
+			</section>
+		</div>
 
 		<!-- SHAPE -->
 		<div class="position-relative">
-		  <div class="text-gray-200">
-		    </div>
+			<div class="text-gray-200">
+			</div>
 		</div>
 
 		<!-- FOOTER -->
 		<footer class="py-8 py-md-11 bg-gray-200">
-		  <div class="container">
-			<div class="row">
-			  <div class="col-12 col-md-4 col-lg-3">
-		
-				<!-- Brand -->
-				<img src="./assets/img/logo.png" class="navbar-brand-img" alt="...">
-
-			  </div>
-			 
-			
-			</div> <!-- / .row -->
-		  </div> <!-- / .container -->
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-md-4 col-lg-3">
+						<!-- Brand -->
+						<img src="./assets/img/logo.png" class="navbar-brand-img" alt="...">
+					</div>
+				</div> <!-- / .row -->
+			</div> <!-- / .container -->
 		</footer>
-
-    <!-- JAVASCRIPT -->
-    <!-- Map JS -->
-    <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
-    
-    <!-- Vendor JS -->
-    <script src="./assets/js/vendor.bundle.js"></script>
-    
-    <!-- Theme JS -->
-    <script src="./assets/js/theme.bundle.js"></script>
-
-  </body>
+		<!-- JAVASCRIPT -->
+		<!-- Map JS -->
+		<script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+		<!-- Vendor JS -->
+		<script src="./assets/js/vendor.bundle.js"></script>
+		<!-- Theme JS -->
+		<script src="./assets/js/theme.bundle.js"></script>
+	</body>
 </html>
