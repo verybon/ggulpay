@@ -118,5 +118,63 @@ section[data-sect="main1"] .hnp-txt > span{
 }
 section[data-sect="main1"] .hnp-title-mainCopy{
 	display: block;
+}
 
+/* layout */
+header{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+header .brand{
+	display: inline-block;
+	width: 5rem;
+	height: auto;
+	margin: 1.5rem 0 0 1rem;
+}
+header .brand img{
+	width: 100%;
+}
+footer{
+	margin: 2.5rem 0 0;
+	padding: 2rem 1rem;
+	background: #303030;
+}
+footer *{
+	filter:invert(1);
+}
+footer .linkbox .wrap{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin: 0 0 1rem;
+}
+footer .linkbox .wrap a{
+	display: block;
+	width: 100%;
+	color: #000;
+	text-align: center;
+}
+footer .linkbox .wrap a + a{
+	border-left: 1px solid #fff;
+}
+footer .infobox{
+	text-align: center;
+}
+footer .logo{
+	margin: 0 0 1rem;
+	text-align: center;
+	filter:brightness(0) invert(1);
+}
+footer .logo img{
+	width: 3rem;
+}
+.nav-log{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding: 1.5rem;
+}
+main{
+	padding: 2rem 1rem 0;
 }
