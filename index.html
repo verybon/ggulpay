@@ -2,318 +2,379 @@
 	<html lang="en">
 	<head>
 		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="robots" content="index,nofollow" />
+		<meta name="description" content="모든 월세 신용카드 결제서비스 꿀페이" />
 		<meta property="og:title" content="꿀페이" />
 		<meta property="og:url" content="" />
-		<meta property="og:image" content="" />
-		<meta property="og:description" content="모든 월세 신용카드 결제서비스 꿀페이" />
-		<!-- Favicon -->
-		<link rel="shortcut icon" href="./assets/favicon/favicon.ico" type="image/x-icon" />
-		<!-- Map CSS -->
-		<link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css" />
-		<!-- Libs CSS -->
+		<meta property="og:image" content="">
+		<meta property="og:description" content="모든 월세 신용카드 결제서비스 꿀페이"/>
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:title" content="꿀페이">
+		<meta name="twitter:url" content="">
+		<meta name="twitter:image" content="">
+		<meta name="twitter:description" content="모든 월세 신용카드 결제서비스 꿀페이"/>
+
+		<link rel="shortcut icon" href="./assets/favicon/favicon.ico" type="image/x-icon" /><!-- Favicon -->
+		<!-- <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css" />Map CSS -->
 		<link rel="stylesheet" href="./assets/css/libs.bundle.css" />
-		<!-- Theme CSS -->
 		<link rel="stylesheet" href="./assets/css/theme.bundle.css" />
-		<link rel="stylesheet" href="./assets/css/honeypay.css" />
-		<!-- Title -->
-		<title>꿀페이</title>
+		<link rel="stylesheet" href="./assets/css/ui.honeypay.css" />
+		<title>꿀페이 - 모든 월세 신용카드 결제서비스</title>
 	</head>
 	<body data-page="main">
-		<div class="view">
-			<!-- NAVBAR -->
-			<nav class="navbar navbar-expand-lg navbar-light bs-yellow">
-				<div class="container">
-					<!-- Brand -->
-					<a class="navbar-brand" href="./index.html">
+		<div class="page">
+			<header>
+				<h1 class="brand">
+					<a href="./index.html">
 						<img src="./assets/img/logo.png" class="navbar-brand-img" alt="꿀페이" />
 					</a>
-					<!-- Collapse -->
-					<div class="collapse navbar-collapse" id="navbarCollapse">
+				</h1>
+				<!-- NAVBAR -->
+				<nav class="navbar navbar-expand-lg navbar-dark">
+					<div class="container">
 						<!-- Toggler -->
 						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-							<i class="fe fe-x"></i>
+							<span class="navbar-toggler-icon"></span>
 						</button>
-						<!-- Navigation -->
-						<ul class="navbar-nav ml-auto">
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" id="navbarLandings" href="#" aria-haspopup="true" aria-expanded="false">
-								서비스신청
-							</a>
-						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" id="navbarPages" href="#" aria-haspopup="true" aria-expanded="false">
-								이벤트
-							</a>
-						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" id="navbarAccount" href="#" aria-haspopup="true" aria-expanded="false">
-								자주묻는질문
-							</a>
-						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" id="navbarDocumentation" href="#" aria-haspopup="true" aria-expanded="false">
-								공지사항
-							</a>
-						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" id="navbarDocumentation" href="#" aria-haspopup="true" aria-expanded="false">
-								고객센터
-							</a>
-						</li>
-						</ul>
-						<!-- Button -->
+
+						<!-- Collapse -->
+						<div class="collapse navbar-collapse" id="navbarCollapse">
+							<!-- Toggler -->
+							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+								<i class="fe fe-x"></i>
+							</button>
+							<!-- Navigation -->
+							<ul class="navbar-nav ml-auto">
+								<li class="nav-item dropdown">
+									<a class="nav-link" id="navbarLandings" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+										서비스신청
+									</a>
+								</li>
+								<li class="nav-item dropdown">
+									<a class="nav-link" id="navbarPages" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+										이벤트
+									</a>
+								</li>
+								<li class="nav-item dropdown">
+									<a class="nav-link" id="navbarAccount" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+										자주묻는 질문
+									</a>
+								</li>
+								<li class="nav-item dropdown">
+									<a class="nav-link" id="navbarDocumentation" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+										공지사항
+									</a>
+								</li>
+								<li class="nav-item dropdown">
+									<a class="nav-link" id="navbarDocumentation" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+										고객센터 문의하기
+									</a>
+								</li>
+							</ul>
+							<!-- login -->
+							<div class="nav-log">
+								<a class="" href="https://themes.getbootstrap.com/product/landkit/" target="_blank">
+									로그인
+								</a>
+								<a class="" href="https://themes.getbootstrap.com/product/landkit/" target="_blank">
+									회원가입
+								</a>
+							</div>
+						</div>
+					</div>
+				</nav>
+			</header>
+
+			<main id="content" class="content">
+				<div class="wrap">
+					<!-- 내용 -->
+
+
+					<section data-sect="main1" class="pt-md-7 pb-13">
+						<div class="container">
+							<div class="row align-items-center">
+								<div class="col-12 col-md-5 col-lg-6 order-md-2" data-aos="fade-up" data-aos-delay="100">
+									<img src="assets/img/illustrations/main_01.png" class=" img-fluid mw-md-150 mw-lg-130 mb-6 mb-md-0 aos-init aos-animate" alt="...">
+								</div>
+								<div class="col-12 col-md-7 col-lg-6 order-md-1" data-aos="fade-up" data-aos-delay="300">
+									<p class="lead text-center text-md-left text-muted mb-6 mb-lg-8 hnp-txt">
+										<span>꿀처럼 달달한 혜택이</span><span>꿀페이에서 쏟아집니다.</span>
+									</p>
+									<!-- Heading -->
+									<h1 class="text-center text-md-left hnp-title">
+										<span class="display-5">모든 월세</span>
+										<span class="display-5">(feat. 관리비, 보증금, 계약금)</span>
+										<span class="display-3 text-primary font-weight-bold hnp-title-mainCopy">신용카드 결제서비스</span>
+									</h1>
+								</div>
+							</div>
+						</div>
+					</section>
+
+
+					<!-- WELCOME -->
+					<section data-sect="main1" class="pt-md-7 pb-13">
+						<div class="container">
+							<div class="row align-items-center">
+								<div class="col-12 col-md-5 col-lg-6 order-md-2">
+									<!-- Image -->
+									<img src="assets/img/illustrations/main_01.png" class=" img-fluid mw-md-150 mw-lg-130 mb-6 mb-md-0 aos-init aos-animate " alt="..." data-aos="fade-up" data-aos-delay="100">
+								</div>
+								<div class="col-12 col-md-7 col-lg-6 order-md-1" data-aos="fade-up">
+									<!-- Text -->
+									<p class="lead text-center text-md-left text-muted mb-6 mb-lg-8 hnp-txt">
+										<span>꿀처럼 달달한 혜택이</span><span>꿀페이에서 쏟아집니다.</span>
+									</p>
+									<!-- Heading -->
+									<h1 class="text-center text-md-left hnp-title">
+										<span class="display-5">모든 월세</span>
+										<span class="display-5">(feat. 관리비, 보증금, 계약금)</span>
+										<span class="display-3 text-primary font-weight-bold hnp-title-mainCopy">신용카드 결제서비스</span>
+									</h1>
+								</div>
+							</div> <!-- / .row -->
+						</div> <!-- / .container -->
+					</section>
+					<!-- BRANDS -->
+
+					<!-- FEATURES -->
+					<section class="pt-8 pb-8 py-md-11 bg-white">
+						<div class="container">
+							<div class="row">
+								<div class="col-12 col-md-12" data-aos="fade-up" style="text-align:center;">
+								<!-- Text -->
+								<p class="font-size-lg text-muted mb-7 mb-md-9">
+									계약서, 납부증만 있으면 OK!!<br/>
+									연체/현금 부담없이 꿀페이하세요.<br/>
+									꿀페이 자체포인트는 물론 <br/>
+								</p>
+								<h3 class="display-4">
+									카드사 무이자 할부&포인트 적립으로 <span data-typed='{"strings": ["2배", "2배"]}'></span>혜택
+								</h3>
+							</div>
+						</div> <!-- / .container -->
+					</section>
+
+					<!-- ABOUT -->
+					<section class="pt-8 py-md-7 pb-8 bg-gradient-light">
+						<div class="container">
+							<div class="row align-items-center ">
+								<div class="col-12 col-md-12 col-lg-6 text-center text-md-left " >
+									<!-- Heading -->
+									<h1>
+										01<br>
+										<span class="text-primary">신용카드 결제서비스</span>.
+									</h1>
+									<!-- Text -->
+									<p class="font-size-lg text-muted mb-6">
+										꿀페이는 월세/관리비/보증금<br/>
+										신용카드 결제 서비스입니다.
+									</p>
+									<!-- List -->
+								</div>
+								<div class="col-12 col-md-11 col-lg-6">
+									<div class="w-md-150 w-lg-130 position-relative  text-center">
+										<!-- Image -->
+										<div class="img-skewed img-skewed-left">
+											<!-- Image -->
+											<img src="assets/img/illustrations/img_01.png" data-aos="fade-up" data-aos-delay="100" alt="...">
+										</div>
+									</div>
+								</div>
+							</div> <!-- / .row -->
+						</div> <!-- / .container -->
+					</section>
+
+					<!-- TESTIMONIALS -->
+					<section class="pt-8 py-md-7 pb-8 bg-white">
+						<div class="container">
+							<div class="row align-items-center ">
+								<div class="col-12 col-md-12 col-lg-6 text-center text-md-left " >
+									<!-- Heading -->
+									<h1>
+										02<br>
+										<span class="text-primary">꿀페이는 집주인의 <br/>
+										동의가 필요없습니다.</span>
+									</h1>
+									<!-- Text -->
+									<p class="font-size-lg text-muted mb-6">
+										집주인이 서비스에 가입할 필요도 없고<br/>
+										고객님(세입자)이 단독으로 결제 가능합니다.
+									</p>
+									<!-- List -->
+								</div>
+								<div class="col-12 col-md-11 col-lg-6">
+									<div class="w-md-150 w-lg-130 position-relative text-center ">
+										<div class="img-skewed img-skewed-left">
+											<!-- Image -->
+											<img src="assets/img/illustrations/img_02.png" class=" img-fluid mw-md-130 mw-lg-110 mb-6 mb-md-0 aos-init aos-animate " alt="...">
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- / .row -->
+						</div>
+					</section>
+					<!-- / .container -->
+
+					<!-- ABOUT -->
+					<section class="pt-8 py-md-7 pb-8 bg-gradient-light">
+						<div class="container">
+							<div class="row align-items-center ">
+								<div class="col-12 col-md-12 col-lg-6 text-center text-md-left " >
+									<!-- Heading -->
+									<h1>
+										03<br>
+										<span class="text-primary">꿀페이는 타 업체 대비<br/> <strong>혜택이 두배!!</strong></span>.
+									</h1>
+									<!-- Text -->
+									<p class="font-size-lg text-muted mb-6">
+										오브콜스~ of course~ <br/>
+										카드사 무이자&포인트 적립은 당연<br/>
+										자체 등급별 포인트 적립으로 1원부터 사용가능합니다.
+									</p>
+								<!-- List -->
+								</div>
+								<div class="col-12 col-md-11 col-lg-6">
+									<div class="w-md-150 w-lg-130 position-relative  text-center">
+										<!-- Image -->
+										<div class="img-skewed img-skewed-left">
+										<!-- Image -->
+											<img src="assets/img/illustrations/img_03.png"  alt="...">
+										</div>
+									</div>
+								</div>
+							</div> <!-- / .row -->
+						</div> <!-- / .container -->
+					</section>
+					<!-- TESTIMONIALS -->
+
+					<section class="pt-8 py-md-7 pb-8 bg-white">
+						<div class="container">
+							<div class="row align-items-center ">
+								<div class="col-12 col-md-12 col-lg-6 text-center text-md-left " >
+									<!-- Heading -->
+									<h1>
+										04<br>
+										<span class="text-primary">꿀페이는 안전합니다.
+										</span>
+									</h1>
+									<!-- Text -->
+									<p class="font-size-lg text-muted mb-6">
+										비밀번호(SHA-512)는 물론 모든 개인정보를 <br/>
+										암호화하여 고객님의 개인정보를 소중히 지킵니다
+									</p>
+									<!-- List -->
+								</div>
+								<div class="col-12 col-md-11 col-lg-6">
+									<div class="w-md-150 w-lg-130 position-relative text-center ">
+										<div class="img-skewed img-skewed-left">
+											<!-- Image -->
+											<img src="assets/img/illustrations/img_04.png" class=" img-fluid mw-md-130 mw-lg-110 mb-6 mb-md-0 aos-init aos-animate " alt="...">
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- / .row -->
+						</div>
+					</section>
+					<!-- / .container -->
+
+					<!-- ABOUT -->
+					<section class="pt-8 py-md-7 pb-8 bg-gradient-light">
+						<div class="container">
+							<div class="row align-items-center ">
+								<div class="col-12 col-md-12 col-lg-6 text-center text-md-left " >
+									<!-- Heading -->
+									<h1>
+										05<br>
+										<span class="text-primary">꿀페이는 서비스 이용료를 <br/>
+										<strong>5% </strong>부터 착하게 제공합니다.</span>
+									</h1>
+									<!-- Text -->
+									<p class="font-size-lg text-muted mb-6">
+										다양한 프로모션 진행 시 더 착한 서비스 혜택을 누려보세요.
+									</p>
+									<!-- List -->
+								</div>
+								<div class="col-12 col-md-11 col-lg-6">
+									<div class="w-md-150 w-lg-130 position-relative  text-center">
+										<!-- Image -->
+										<div class="img-skewed img-skewed-left">
+										<!-- Image -->
+											<img src="assets/img/illustrations/img_05.png"  alt="...">
+										</div>
+									</div>
+								</div>
+							</div> <!-- / .row -->
+						</div> <!-- / .container -->
+					</section>
+
+					<!-- CTA -->
+					<section class="py-8 py-md-11 bg-dark">
+						<div class="container">
+							<div class="row justify-content-center">
+								<div class="col-12 col-md-10 col-lg-8 text-center">
+									<!-- Badge -->
+									<span class="badge bg-gray-700-soft mb-4">
+										<span class="h6 font-weight-bold text-uppercase">Get started</span>
+									</span>
+									<!-- Heading -->
+									<h1 class="display-4 text-white">
+										Get Landkit and save your time.
+									</h1>
+									<!-- Text -->
+									<p class="font-size-lg text-muted mb-6 mb-md-8">
+										Stop wasting time trying to do it the "right way" and build a site from scratch. Landkit is faster, easier, and you still have complete control.
+									</p>
+									<!-- Button -->
+									<a href="https://themes.getbootstrap.com/product/landkit/" target="_blank" class="btn btn-success lift">
+										Buy it now <i class="fe fe-arrow-right"></i>
+									</a>
+								</div>
+							</div> <!-- / .row -->
+						</div> <!-- / .container -->
+					</section>
+
+					<!-- SHAPE -->
+					<div class="position-relative">
+						<div class="text-gray-200">
+						</div>
+					</div>
+
+					<!-- //내용 -->
+				</div>
+			</main>
+
+			<!-- FOOTER -->
+			<footer>
+				<div class="logo">
+					<img src="./assets/img/logo.png" class="navbar-brand-img" alt="꿀페이" />
+				</div>
+				<div class="linkbox">
+					<div class="wrap">
+						<a href="/sub/terms">서비스 이용약관</a>
+						<a href="/sub/privacy">개인정보 처리방침</a>
 					</div>
 				</div>
-			</nav>
-			<!-- WELCOME -->
-			<section data-sect="main1" class="pt-md-7 pb-13">
-				<div class="container">
-					<div class="row align-items-center">
-						<div class="col-12 col-md-5 col-lg-6 order-md-2">
-							<!-- Image -->
-							<img src="assets/img/illustrations/main_01.png" class=" img-fluid mw-md-150 mw-lg-130 mb-6 mb-md-0 aos-init aos-animate " alt="..." data-aos="fade-up" data-aos-delay="100">
-						</div>
-						<div class="col-12 col-md-7 col-lg-6 order-md-1" data-aos="fade-up">
-							<!-- Text -->
-							<p class="lead text-center text-md-left text-muted mb-6 mb-lg-8 hnp-txt">
-								<span>꿀처럼 달달한 혜택이</span><span>꿀페이에서 쏟아집니다.</span>
-							</p>
-							<!-- Heading -->
-							<h1 class="text-center text-md-left hnp-title">
-								<span class="display-5">모든 월세</span>
-								<span class="display-5">(feat. 관리비, 보증금, 계약금)</span>
-								<span class="display-3 text-primary font-weight-bold hnp-title-mainCopy">신용카드 결제서비스</span>
-							</h1>
-						</div>
-					</div> <!-- / .row -->
-				</div> <!-- / .container -->
-			</section>
-			<!-- BRANDS -->
-
-			<!-- FEATURES -->
-			<section class="pt-8 pb-8 py-md-11 bg-white">
-				<div class="container">
-					<div class="row">
-						<div class="col-12 col-md-12" data-aos="fade-up" style="text-align:center;">
-						<!-- Text -->
-						<p class="font-size-lg text-muted mb-7 mb-md-9">
-							계약서, 납부증만 있으면 OK!!<br/>
-							연체/현금 부담없이 꿀페이하세요.<br/>
-							꿀페이 자체포인트는 물론 <br/>
+				<div class="infobox">
+					<div class="wrap">
+						<p>
+							경기도 수원시 영통구 광교중앙로 170 215<br>
+							회사명 : 홈페이클릭  대표자 : 이한주  사업자등록번호 : 835-58-00348<br>
+							Copyright (C)2019 P.E.A.I SYSTEMS, INC. All rights reserved.
 						</p>
-						<h3 class="display-4">
-							카드사 무이자 할부&포인트 적립으로 <span data-typed='{"strings": ["2배", "2배"]}'></span>혜택
-						</h3>
 					</div>
-				</div> <!-- / .container -->
-			</section>
-
-			<!-- ABOUT -->
-			<section class="pt-8 py-md-7 pb-8 bg-gradient-light">
-				<div class="container">
-					<div class="row align-items-center ">
-						<div class="col-12 col-md-12 col-lg-6 text-center text-md-left " >
-							<!-- Heading -->
-							<h1>
-								01<br>
-								<span class="text-primary">신용카드 결제서비스</span>.
-							</h1>
-							<!-- Text -->
-							<p class="font-size-lg text-muted mb-6">
-								꿀페이는 월세/관리비/보증금<br/>
-								신용카드 결제 서비스입니다.
-							</p>
-							<!-- List -->
-						</div>
-						<div class="col-12 col-md-11 col-lg-6">
-							<div class="w-md-150 w-lg-130 position-relative  text-center">
-								<!-- Image -->
-								<div class="img-skewed img-skewed-left">
-									<!-- Image -->
-									<img src="assets/img/illustrations/img_01.png" data-aos="fade-up" data-aos-delay="100" alt="...">
-								</div>
-							</div>
-						</div>
-					</div> <!-- / .row -->
-				</div> <!-- / .container -->
-			</section>
-
-			<!-- TESTIMONIALS -->
-			<section class="pt-8 py-md-7 pb-8 bg-white">
-				<div class="container">
-					<div class="row align-items-center ">
-						<div class="col-12 col-md-12 col-lg-6 text-center text-md-left " >
-							<!-- Heading -->
-							<h1>
-								02<br>
-								<span class="text-primary">꿀페이는 집주인의 <br/>
-								동의가 필요없습니다.</span>
-							</h1>
-							<!-- Text -->
-							<p class="font-size-lg text-muted mb-6">
-								집주인이 서비스에 가입할 필요도 없고<br/>
-								고객님(세입자)이 단독으로 결제 가능합니다.
-							</p>
-							<!-- List -->
-						</div>
-						<div class="col-12 col-md-11 col-lg-6">
-							<div class="w-md-150 w-lg-130 position-relative text-center ">
-								<div class="img-skewed img-skewed-left">
-									<!-- Image -->
-									<img src="assets/img/illustrations/img_02.png" class=" img-fluid mw-md-130 mw-lg-110 mb-6 mb-md-0 aos-init aos-animate " alt="...">
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- / .row -->
 				</div>
-			</section>
-			<!-- / .container -->
-
-			<!-- ABOUT -->
-			<section class="pt-8 py-md-7 pb-8 bg-gradient-light">
-				<div class="container">
-					<div class="row align-items-center ">
-						<div class="col-12 col-md-12 col-lg-6 text-center text-md-left " >
-							<!-- Heading -->
-							<h1>
-								03<br>
-								<span class="text-primary">꿀페이는 타 업체 대비<br/> <strong>혜택이 두배!!</strong></span>.
-							</h1>
-							<!-- Text -->
-							<p class="font-size-lg text-muted mb-6">
-								오브콜스~ of course~ <br/>
-								카드사 무이자&포인트 적립은 당연<br/>
-								자체 등급별 포인트 적립으로 1원부터 사용가능합니다.
-							</p>
-						<!-- List -->
-						</div>
-						<div class="col-12 col-md-11 col-lg-6">
-							<div class="w-md-150 w-lg-130 position-relative  text-center">
-								<!-- Image -->
-								<div class="img-skewed img-skewed-left">
-								<!-- Image -->
-									<img src="assets/img/illustrations/img_03.png"  alt="...">
-								</div>
-							</div>
-						</div>
-					</div> <!-- / .row -->
-				</div> <!-- / .container -->
-			</section>
-			<!-- TESTIMONIALS -->
-
-			<section class="pt-8 py-md-7 pb-8 bg-white">
-				<div class="container">
-					<div class="row align-items-center ">
-						<div class="col-12 col-md-12 col-lg-6 text-center text-md-left " >
-							<!-- Heading -->
-							<h1>
-								04<br>
-								<span class="text-primary">꿀페이는 안전합니다.
-								</span>
-							</h1>
-							<!-- Text -->
-							<p class="font-size-lg text-muted mb-6">
-								비밀번호(SHA-512)는 물론 모든 개인정보를 <br/>
-								암호화하여 고객님의 개인정보를 소중히 지킵니다
-							</p>
-							<!-- List -->
-						</div>
-						<div class="col-12 col-md-11 col-lg-6">
-							<div class="w-md-150 w-lg-130 position-relative text-center ">
-								<div class="img-skewed img-skewed-left">
-									<!-- Image -->
-									<img src="assets/img/illustrations/img_04.png" class=" img-fluid mw-md-130 mw-lg-110 mb-6 mb-md-0 aos-init aos-animate " alt="...">
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- / .row -->
-				</div>
-			</section>
-			<!-- / .container -->
-
-			<!-- ABOUT -->
-			<section class="pt-8 py-md-7 pb-8 bg-gradient-light">
-				<div class="container">
-					<div class="row align-items-center ">
-						<div class="col-12 col-md-12 col-lg-6 text-center text-md-left " >
-							<!-- Heading -->
-							<h1>
-								05<br>
-								<span class="text-primary">꿀페이는 서비스 이용료를 <br/>
-								<strong>5% </strong>부터 착하게 제공합니다.</span>
-							</h1>
-							<!-- Text -->
-							<p class="font-size-lg text-muted mb-6">
-								다양한 프로모션 진행 시 더 착한 서비스 혜택을 누려보세요.
-							</p>
-							<!-- List -->
-						</div>
-						<div class="col-12 col-md-11 col-lg-6">
-							<div class="w-md-150 w-lg-130 position-relative  text-center">
-								<!-- Image -->
-								<div class="img-skewed img-skewed-left">
-								<!-- Image -->
-									<img src="assets/img/illustrations/img_05.png"  alt="...">
-								</div>
-							</div>
-						</div>
-					</div> <!-- / .row -->
-				</div> <!-- / .container -->
-			</section>
-
-			<!-- CTA -->
-			<section class="py-8 py-md-11 bg-dark">
-				<div class="container">
-					<div class="row justify-content-center">
-						<div class="col-12 col-md-10 col-lg-8 text-center">
-							<!-- Badge -->
-							<span class="badge bg-gray-700-soft mb-4">
-								<span class="h6 font-weight-bold text-uppercase">Get started</span>
-							</span>
-							<!-- Heading -->
-							<h1 class="display-4 text-white">
-								Get Landkit and save your time.
-							</h1>
-							<!-- Text -->
-							<p class="font-size-lg text-muted mb-6 mb-md-8">
-								Stop wasting time trying to do it the "right way" and build a site from scratch. Landkit is faster, easier, and you still have complete control.
-							</p>
-							<!-- Button -->
-							<a href="https://themes.getbootstrap.com/product/landkit/" target="_blank" class="btn btn-success lift">
-								Buy it now <i class="fe fe-arrow-right"></i>
-							</a>
-						</div>
-					</div> <!-- / .row -->
-				</div> <!-- / .container -->
-			</section>
+			</footer>
+			<!-- //FOOTER -->
 		</div>
-
-		<!-- SHAPE -->
-		<div class="position-relative">
-			<div class="text-gray-200">
-			</div>
-		</div>
-
-		<!-- FOOTER -->
-		<footer class="py-8 py-md-11 bg-gray-200">
-			<div class="container">
-				<div class="row">
-					<div class="col-12 col-md-4 col-lg-3">
-						<!-- Brand -->
-						<img src="./assets/img/logo.png" class="navbar-brand-img" alt="...">
-					</div>
-				</div> <!-- / .row -->
-			</div> <!-- / .container -->
-		</footer>
 		<!-- JAVASCRIPT -->
-		<!-- Map JS -->
-		<script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
-		<!-- Vendor JS -->
-		<script src="./assets/js/vendor.bundle.js"></script>
-		<!-- Theme JS -->
-		<script src="./assets/js/theme.bundle.js"></script>
+		<script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script><!-- Map JS -->
+		<script src="./assets/js/vendor.bundle.js"></script><!-- Vendor JS -->
+		<script src="./assets/js/theme.bundle.js"></script><!-- Theme JS -->
+		<script src="./assets/js/ui.honeypay.js"></script>
 	</body>
 </html>
